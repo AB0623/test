@@ -1,0 +1,30 @@
+h1{
+    color:#00B88D;
+    background-color:#00171F;
+    border-radius:10px;
+}
+
+p{
+    color:LightPink;
+    background-color:Crimson;
+    border-radius: 10px;
+    font-size: 24px;
+}
+
+button{
+    color:PowderBlue;
+    background-color:cadetblue;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+p1{
+    font-size: 10px;
+    color:cadetblue;
+}
+
+div{
+    background-color: darkkhaki;
+    border-radius: 10px;
+    font-size: 20px;
+}
