@@ -1,12 +1,11 @@
-var cvs, ctx;
-window.onload=function(){
-    cvs=document.getElementById("cvs");
-    ctx=cvs.getContext("2d");
+function loadFile(input){
+    var file=input.files[0];
+    var src=URL.createObjectURL(file);
     var img=new Image();
-    img.src="mm.jpg";
+    img.src=src;
     img.onload=function(){
         ctx.drawImage(this, 0, 0, cvs.width, cvs.height);
-    };    
+    };
 }
 
 function invertColor(){
@@ -17,5 +16,5 @@ function invertColor(){
         data[i+1]=255-data[i+1];
         data[i+2]=255-data[i+2];
     };
-    ctx.putImageData(pixels, 0, 0);
+    ctx.putImageData(pixels, 0, 0, cvs.width, cvs.height);
 }
