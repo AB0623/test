@@ -7,8 +7,12 @@
     </head>
     <body>
         <script src="hp.js"></script>
-        <canvas id="cvs" width="800" height="600" style="border:1px solid black"></canvas>
+        <canvas id="cvs" width="600" height="550" style="border:1px solid black"></canvas>
         <div><input type="file" onchange="loadFile(this);"/></div>
         <div><button onclick="invertColor();">顏色反轉</button></div>
+        <div>
+            <button onclick="saveFile();">儲存檔案</button>
+            <a id="download"></a>
+        </div>
     </body>
 </html>
