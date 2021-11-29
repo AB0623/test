@@ -24,3 +24,10 @@ function invertColor(){
     };
     ctx.putImageData(pixels, 0, 0, cvs.width, cvs.height);
 }
+
+function saveFile(){
+    var link=document.getElementById("download");
+    link.download="image.jpg";
+    link.href=cvs.toDataURL("image/jpeg");
+    link.click();
+}
