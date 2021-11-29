@@ -1,7 +1,7 @@
-
+var cvs, ctx;
 window.onload=function(){
-    var cvs=document.getElementById("cvs");
-    var ctx=cvs.getContext("2d");
+    cvs=document.getElementById("cvs");
+    ctx=cvs.getContext("2d");
     var img=new Image();
     img.src="mm.jpg";
     img.onload=function(){
