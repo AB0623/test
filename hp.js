@@ -5,7 +5,7 @@ window.onload=function(){
     var img=new Image();
     img.src="mm.jpg";
     img.onload=function(){
-    ctx.drawImage(this, 0, 0, cvs.width, cvs.height);
+        ctx.drawImage(this, 0, 0, cvs.width, cvs.height);
     };    
 }
 
