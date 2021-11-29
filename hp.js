@@ -22,7 +22,7 @@ function invertColor(){
         data[i+1]=255-data[i+1];
         data[i+2]=255-data[i+2];
     };
-    ctx.putImageData(pixels, 0, 0, cvs.width, cvs.height);
+    ctx.putImageData(pixels, 0, 0);
 }
 
 function saveFile(){
