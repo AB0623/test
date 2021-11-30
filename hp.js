@@ -1,4 +1,4 @@
-window.onload = function(){setUp(); loadFile();}
+window.onload = function(){setUp(); loadFile(input);}
 
 function setUp(){
     var cvs;
