@@ -3,7 +3,6 @@ window.onload=function(){
     cvs=document.getElementById("cvs");
     ctx=cvs.getContext("2d");
 }
-
 function loadFile(input){
     var file=input.files[0];
     var src=URL.createObjectURL(file);
@@ -13,7 +12,6 @@ function loadFile(input){
         ctx.drawImage(this, 0, 0, cvs.width, cvs.height);
     };
 }
-
 function invertColor(){
     var pixels=ctx.getImageData(0, 0, cvs.width, cvs.height);
     var data=pixels.data;
@@ -24,7 +22,6 @@ function invertColor(){
     };
     ctx.putImageData(pixels, 0, 0);
 }
-
 function saveFile(){
     var link=document.getElementById("download");
     link.download="image.jpg";
