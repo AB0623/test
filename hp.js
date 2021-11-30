@@ -1,10 +1,8 @@
 window.onload = function(){setup();}
 
 function setup(){
-    var cvs;
-    var ctx;
-    cvs=document.getElementById("cvs");
-    ctx=cvs.getContext("2d");
+    var cvs=document.getElementById("cvs");
+    var ctx=cvs.getContext("2d");
 }
 function loadFile(input){
     var file=input.files[0];
