@@ -1,7 +1,9 @@
-var cvs, ctx;
-window.onload=function(){
-    cvs=document.getElementById("cvs");
+window.onload = function(){dCC(); loadFile(input); invertColor(); saveFile();}
+
+function dCC(){
+    var cvs=document.getElementById("cvs");
     ctx=cvs.getContext("2d");
+    var ctx;
 }
 
 function loadFile(input){
