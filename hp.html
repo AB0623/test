@@ -7,6 +7,14 @@
     </head>
     <body>
         <script src="hp.js"></script>
+        <video id="video" src="niche.mp4"></video>
+        <div>
+            <button onclick="playVideo();">播放影片</button>
+            <button onclick="pauseVideo();">暫停影片</button>
+            <button onclick="replayVideo();">重播影片</button>
+            <span id="timer"></span>
+        </div>
+        <hr/>
         <canvas id="cvs" width="600" height="550" style="border:1px solid black"></canvas>
         <div><input type="file" onchange="loadFile(this);"/></div>
         <div><button onclick="invertColor();">顏色反轉</button></div>
