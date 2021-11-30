@@ -1,4 +1,4 @@
-window.onload = function(){takeVideo(); updateTimer(); playVideo(); pauseVideo(); replayVideo(); dCC(); loadFile(); invertColor(); saveFile();}
+window.onload = function(){takeVideo(); updateTimer(); playVideo(); pauseVideo(); replayVideo(); dCC(); loadFile(input); invertColor(); saveFile();}
 
 function takeVideo(){
     var video=document.getElementById("video");
