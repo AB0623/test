@@ -1,7 +1,6 @@
-window.onload = function(){dCC(); loadFile(); invertColor(); saveFile();}
-function dCC(){
-    var cvs=document.getElementById("cvs");
-    var ctx;
+var cvs, ctx;
+window.onload=function(){
+    cvs=document.getElementById("cvs");
     ctx=cvs.getContext("2d");
 }
 
