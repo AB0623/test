@@ -2,8 +2,8 @@ window.onload = function(){setup(); loadFile(); invertColor(); saveFile();}
 
 function setup(){
     var cvs;
-    cvs=document.getElementById("cvs");
     var ctx;
+    cvs=document.getElementById("cvs");
     ctx=cvs.getContext("2d");
 }
 function loadFile(input){
