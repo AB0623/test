@@ -1,4 +1,4 @@
-window.onload = function(){dCC(); loadFile(input); invertColor(); saveFile();}
+window.onload = function(){dCC(); loadFile(); invertColor(); saveFile();}
 function dCC(){
     var cvs=document.getElementById("cvs");
     ctx=cvs.getContext("2d");
