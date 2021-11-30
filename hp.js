@@ -1,4 +1,4 @@
-window.onload = function(){setup(); loadFile(); invertColor(); saveFile();}
+window.onload = function(){setup();}
 
 function setup(){
     var cvs;
