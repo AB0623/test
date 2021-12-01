@@ -1,4 +1,27 @@
-window.onload = function(){setUp(); loadFile(input);}
+window.onload = function(){takeVideo(); updateTimer(); setUp(); loadFile(input);}
+
+function takeVideo(){
+    var video=document.getElementById("video");
+    video.addEventListener("timeupdate", updateTimer);
+    video.addEventListener("ended", function(){
+        alert("影片結束");
+    });
+}
+function updateTimer(){
+    var timer=document.getElementById("timer");
+    timer.innerHTML=video.currentTime +"/"+ video.duration;
+}
+function playVideo(){
+    video.play();
+}
+function pauseVideo(){
+    video.pause();
+}
+function replayVideo(){
+    video.currentTime=0;
+    video.play();
+}
+
 var cvs, ctx;
 function setUp(){
     cvs=document.getElementById("cvs"),
