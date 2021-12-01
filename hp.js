@@ -24,7 +24,7 @@ function replayVideo(){
 
 var cvs, ctx;
 function setUp(){
-    cvs=document.getElementById("cvs"),
+    cvs=document.getElementById("cvs");
     ctx=cvs.getContext("2d");    
 }
 function loadFile(input){
