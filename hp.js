@@ -26,6 +26,11 @@ var cvs, ctx;
 function setUp(){
     cvs=document.getElementById("cvs"),
     ctx=cvs.getContext("2d");
+    var img=new Image();
+    img.src="sc.jpg";
+    img.onload=function(){
+        ctx.drawImage(this, 0, 0, cvs.width, cvs.height);
+    
 }
 function loadFile(input){
     var file=input.files[0];
