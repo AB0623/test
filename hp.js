@@ -1,8 +1,8 @@
 window.onload = function(){setUp(); loadFile(input);}
-
+var cvs, ctx;
 function setUp(){
-    var cvs=document.getElementById("cvs"),
-        ctx=cvs.getContext("2d");
+    cvs=document.getElementById("cvs"),
+    ctx=cvs.getContext("2d");
 }
 function loadFile(input){
     var file=input.files[0];
@@ -10,8 +10,6 @@ function loadFile(input){
     var img=new Image();
     img.src=src;
     img.onload=function(){
-        var cvs=document.getElementById("cvs"),
-            ctx=cvs.getContext("2d");
         ctx.drawImage(this, 0, 0, cvs.width, cvs.height);
     };
 }
