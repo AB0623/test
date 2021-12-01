@@ -1,4 +1,4 @@
-window.onload = function(){setUp(); loadFile(input); invertColor(); saveFile();}
+window.onload = function(){setUp(); loadFile(input);}
 
 function setUp(){
     var cvs=document.getElementById("cvs"),
@@ -10,6 +10,8 @@ function loadFile(input){
     var img=new Image();
     img.src=src;
     img.onload=function(){
+        var cvs=document.getElementById("cvs"),
+            ctx=cvs.getContext("2d");
         ctx.drawImage(this, 0, 0, cvs.width, cvs.height);
     };
 }
