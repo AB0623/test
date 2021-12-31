@@ -1,0 +1,268 @@
+*{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+.menu{
+    background-color:#000;
+    text-align:center;
+}
+.menu li{
+    display:inline-block;
+    position:relative;
+}
+.menu li a{
+    display:block;
+    text-decoration:none;
+    color:#fff;
+    padding:6px 20px;
+}
+.menu li:hover,
+.menu li a:hover{
+    background-color:#fa0;
+}
+
+.menu1{
+    background-color:gray;
+    text-align:left;
+}
+.menu1 li{
+    display:inline-block;
+    position:relative;
+}
+.menu1 li a{
+    display:block;
+    text-decoration:none;
+    color:darkred;
+    padding:6px 20px;
+}
+.subMenu1{
+    background-color:lightgray;
+    position:absolute;
+    width:8em;
+    left:-1000px;
+    transition:.3s;
+}
+.subMenu1 li{
+    display:block;
+}
+.subMenu1 li a{
+    color:darkred;
+    padding:12px 20px;
+}
+.menu1 li:hover,
+.menu1 li a:hover{
+    background-color:red;
+}
+.menu1 li:hover .subMenu1{
+    left:0;
+}
+
+.menu2{
+    background-color:rgba(119, 136, 153, 0.877);
+    text-align:right;
+}
+.menu2 li{
+    display:inline-block;
+    position:relative;
+}
+.menu2 li a{
+    display:block;
+    text-decoration:none;
+    color:orange;
+    padding:6px 5px 6px 100px;
+    text-align:right;
+}
+.subMenu2{
+    background-color:lightgray;
+    position:absolute;
+    width:10em;
+    height:0;
+    overflow:hidden;
+    transition:.10s;
+}
+.subMenu2 li{
+    display:block;
+}
+.subMenu2 li a{
+    padding:12px 5px 12px 80px;
+    text-align:right;
+}
+.menu2 li:hover,
+.menu2 li a:hover{
+    background-color:orangered;
+}
+.menu2 li:hover .subMenu2{
+    height:auto;
+}
+
+.menu3{
+    position:relative;
+    background-color:gray;
+    text-align:center;
+}
+.menu3 li{
+    display:inline-block;
+    width:200px;
+    /* background-color:greenyellow; */
+    border:1px dashed darkslategray;
+}
+.menu3 li a{
+    display:block;
+    text-decoration:none;
+    color:darkgreen;
+    padding:6px 20px;
+}
+.subMenu3{
+    position:absolute;
+    background-color:lightgray;
+    width:100%;
+    left:0;
+    height:0;
+    overflow:hidden;
+}
+.subMenu3 li{
+    /* background-color:greenyellow; */
+    display:inline-block;
+    width:300px;
+    height:40px;
+    border:1px dashed darkslategray;
+}
+.subMenu3 li a{
+    text-align:center;
+    margin:5px 0px 0px 0px;
+}
+.menu3 li:hover,
+.menu3 li a:hover{
+    background-color:greenyellow;
+}
+.subMenu3 li:hover,
+.subMenu3 li a:hover{
+    background-color:rgba(172, 255, 47, 0.418);
+}
+.menu3 li:hover .subMenu3{
+    height:auto;
+}
+
+.menu4{
+    position:relative;
+    background-color:grey;
+    text-align:center;
+}
+.menu4 li{
+    display:inline-block;
+}
+.menu4 li a{
+    display:block;
+    text-decoration:none;
+    color:darkblue;
+    /* text-align:center; */
+    padding:6px 60px;
+    font-size:18px;
+}
+.subMenu4-1{
+    position:absolute;
+    background-color:lightgray;
+    left:0;
+    transition:.2s;
+    transform:perspective(100px) rotateX(90deg);
+    transform-origin:right top;
+    border-radius:0px 0px 10px 0px;
+    opacity:0;
+    width:40%;
+    text-align:right;
+}
+.subMenu4-2{
+    position:absolute;
+    background-color:lightgray;
+    left:0;
+    transition:.2s;
+    transform:perspective(100px) rotateX(90deg);
+    transform-origin:right top;
+    border-radius:0px 0px 10px 0px;
+    opacity:0;
+    width:50%;
+    text-align:right;
+}
+.subMenu4-3{
+    position:absolute;
+    background-color:lightgray;
+    left:0;
+    transition:.2s;
+    transform:perspective(100px) rotateX(90deg);
+    transform-origin:center top;
+    border-radius:0px 0px 10px 0px;
+    opacity:0;
+    width:60%;
+    text-align:right;
+}
+.subMenu4-4{
+    position:absolute;
+    background-color:lightgray;
+    left:0;
+    transition:.2s;
+    transform:perspective(100px) rotateX(90deg);
+    transform-origin:left top;
+    border-radius:0px 0px 10px 0px;
+    opacity:0;
+    width:70%;
+    text-align:right;
+}
+.subMenu4-5{
+    position:absolute;
+    background-color:lightgray;
+    left:0;
+    transition:.2s;
+    transform:perspective(100px) rotateX(90deg);
+    transform-origin:left top;
+    border-radius:0px 0px 10px 0px;
+    opacity:0;
+    width:80%;
+    text-align:right;
+}
+
+.subMenu4-1 li a{
+    padding:12px 20px;
+}
+.subMenu4-2 li a{
+    padding:12px 20px;
+}
+.subMenu4-3 li a{
+    padding:12px 20px;
+}
+.subMenu4-4 li a{
+    padding:12px 20px;
+}
+.subMenu4-5 li a{
+    padding:12px 20px;
+}
+
+.menu4 li:hover,
+.menu4 li a:hover{
+    background-color:rgba(14, 86, 131, 0.3);
+    border-radius:10px 0px 10px 0px;
+}
+.subMenu4-1 li:hover, .subMenu4-2 li:hover, .subMenu4-3 li:hover,
+.subMenu4-4 li:hover, .subMenu4-5 li:hover{
+    background-color:rgb(47, 19, 122, 0.7);
+}
+.menu4 li:hover .subMenu4-1{
+    transform:perspective(100px) rotateX(0deg);
+    opacity:1;
+}
+.menu4 li:hover .subMenu4-2{
+    transform:perspective(100px) rotateX(0deg);
+    opacity:1;
+}
+.menu4 li:hover .subMenu4-3{
+    transform:perspective(100px) rotateX(0deg);
+    opacity:1;
+}
+.menu4 li:hover .subMenu4-4{
+    transform:perspective(100px) rotateX(0deg);
+    opacity:1;
+}
+.menu4 li:hover .subMenu4-5{
+    transform:perspective(100px) rotateX(0deg);
+    opacity:1;
+}
